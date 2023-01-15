@@ -1,0 +1,99 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="clock_style.css">
+  <center>
+  <script type="text/javascript">
+    window.onload = setInterval(clock,1000);
+    function clock()
+          {
+            var d = new Date();
+            
+            var date = d.getDate();
+            
+            var month = d.getMonth();
+            var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+            month=montharr[month];
+            
+            var year = d.getFullYear();
+            
+            var day = d.getDay();
+            var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+            day=dayarr[day];
+            
+            var hour =d.getHours();
+            var min = d.getMinutes();
+            var sec = d.getSeconds();
+          
+            document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+            document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+          }
+        </script>
+
+  <link rel="stylesheet" href="style.css">
+  <title> Aulia Natasha Website</title>
+</head>
+
+<style type="text/css">
+
+body{
+      background-image: url('photos/background2.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+
+    }
+</style>
+<body>
+
+    <ul>
+        <li><a href=index.html>HOMEPAGE</a></li>
+        <li><a href=biodata.html>MY BIODATA</a></li>
+        <li><a href=family.html>MY FAMILY</a></li>
+        <li><a href=education.html>EDUCATION JOURNEY</a></li>
+        <li><a href=gallery.html>GALLERY DUMP</a></li>
+        <li><a href=achievement.html>MY ACHIEVEMENT</a></li>
+        <li><a href=experience.html>EXPERIENCE</a></li>
+    
+                <!--link page by page-->
+                <li><a href="https://www.facebook.com/princessaulia.saaban" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/aulia.ntsha/" class="fa fa-instagram "></a></li>
+    </ul><br>
+
+    <p id="date"></p>
+    <p id="time"></p>
+
+  </center>
+
+    <center>
+<!--Inserting internal image-->
+<img src="photos/logouitm1.png" width="350px" >
+<br>
+
+<b>INFORMATION SCIENCE STUDIES
+<p>
+COLLEGE OF COMPUTING, INFORMATICS AND MEDIA 
+<p>
+(IM110)
+<p>
+INTRODUCTION TO WEB CONTENT MANAGEMENT AND DESIGN
+<p>
+(IMD311)
+<p>
+PREPARED FOR: 
+<p>
+MADAM SERI INTAN IDAYU BINTI SHAHRUL ASARI
+<p>
+PREPARED BY: 
+<p>
+AULIA NATASHA BINTI SAABAN (2020469584)
+<p>
+GROUP: 
+<p>
+N5IM1105A
+</b>
+</center>
+
+
+</body>
+</html>
